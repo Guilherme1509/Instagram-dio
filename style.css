@@ -2,15 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    text-decoration: none;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(247, 247, 247);
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,8 +21,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
+    width: 45%;
     height: 100vh;
+
 }
 
 .instagram-phone {
@@ -38,8 +39,8 @@ body {
 
 .instagram-continue {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center; 
+    justify-content: space-around; 
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -52,12 +53,13 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 2.7rem 0;
+    height: auto;
     border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;
+    min-height: 25rem;
 }
 
 .instagram-logo {
@@ -73,7 +75,7 @@ body {
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 7rem;
 }
 
 .instagram-login {
@@ -81,16 +83,13 @@ body {
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
+    font-weight: bold;
 }
 
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
+.instagram-login{
+    font-weight: 400;
 }
 
-.not-account {
-    color: rgb(160, 160, 160);
-}
 
 .link-blue {
     color: #0095f6;
@@ -119,13 +118,14 @@ body {
     background-size: cover;
 }
 
-.app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
+
+
+
+.not-account{
+    margin: 15px;
 }
 
-.app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
-}
+
 
 /* media queries */
 
@@ -155,5 +155,9 @@ body {
     
     .group {
         border: 1px solid transparent;
+    }
+
+    .instagram-login{
+        margin-bottom: 3px;
     }
 }
